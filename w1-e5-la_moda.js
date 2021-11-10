@@ -1,20 +1,3 @@
-/*
-Prepara un programa que construya una matriz de veinte números aleatorios entre 0 y 10. Una vez
-construida dicha matriz, el programa debe calcular cual es la moda.
-
-Para obtener un número aleatorio entre 0 y 10 puedes utilizar el siguiente código:
-Math.floor(Math.random() * (10 + 1));
-
-Puedes consultar cómo se calcula la moda en este
-enlace:https://www.disfrutalasmatematicas.com/datos/moda.html
-
-Un ejemplo de ejecución del programa sería:
-[ 1, 2, 4, 5, 4 ,4 ,4 ,4 ,4 ,4 ,0 ,7, 8, 4 ,9, 7, 3, 3, 1, 0]
-Moda: 4
-*/
-
-// We don't use functions here because they are introduced in W2
-
 const GENERATED_ARRAY_LENGTH = 10;
 const MAX_RANDOM_NUMBER = 10;
 
@@ -68,8 +51,6 @@ for (index in frequencies) {
   if ( frequencies[index] === maxFrequency ) mode.push(index);
 }
 
-console.log(`Data: [${randomNumbers.join(',')}]`);
-console.log(`Mode: [${mode.join(',')}]`);
 
 
 
